@@ -3,8 +3,8 @@ import { NavLink } from "react-router";
 function Header() {
   let menu = [
     { nombre: "Inicio", ruta: "/inicio" },
-    { nombre: "Segundo Menu", ruta: "/segundo-menu" },
-    { nombre: "Tercer Menu", ruta: "/tercer-menu" },
+    { nombre: "IMC", ruta: "/imc" },
+    { nombre: "PPT", ruta: "/ppt" },
   ];
   return (
     <header>

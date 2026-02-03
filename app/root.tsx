@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import Header from "./components/Header/Header";
+import Persona from "./components/Persona/Persona";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -24,6 +25,26 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+const personas = [
+  {
+    name: "Brayan Ocampo",
+    git: "https://github.com/ocarionza",
+    telefono: "+57 3132515410",
+    correo: "zajoseza@gmail.com",
+    descripcion: "Desarrollador full stack con experiencia en React y Node.js",
+    imageUrl:
+      "https://dummyimage.com/300x300/000/fff&text=Brayan",
+  },
+  {
+    name: "Pirry",
+    git: "https://github.com/Pirry",
+    telefono: "+57 3165356665",
+    correo: "pirry@example.com",
+    descripcion: "Ingeniero de software especializada en desarrollo móvil",
+    imageUrl: "https://dummyimage.com/300x300/000/fff&text=Pirry",
+  },
+];
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -35,6 +56,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <Header />
+        <Persona personas={personas} />
         {children}
         <ScrollRestoration />
         <Scripts />
