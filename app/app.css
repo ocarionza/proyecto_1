@@ -134,3 +134,133 @@ aside nav button.active {
 .person-description p br {
   margin-bottom: 0.5rem;
 }
+
+.ppt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.choices {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.choice {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-width: 150px;
+  border: none;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.choice-label {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #212529;
+}
+
+.counters {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 60%;
+}
+
+.counters div {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.counters div:first-child {
+  background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.counters div:last-child {
+  background: linear-gradient(135deg, #dc3545, #e74c3c);
+}
+
+.counters div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.panel {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 70%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.panelMessage {
+  flex: 1;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panelImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 4px solid #667eea;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.resultImg:hover {
+  transform: scale(1.05);
+}
