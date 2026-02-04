@@ -1,87 +1,69 @@
-# Welcome to React Router!
+# Presentado por:
 
-A modern, production-ready template for building full-stack React applications using React Router.
+- Pirry
+- Jose Brayan Ocampo Castaño
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+# Funcionalidades
 
-## Features
+- Inicio: Lista de preguntas educativas sobre React
+- IMC: Formulario con validación para calcular índice de masa corporal
+- PPT: Juego interactivo piedra, papel y tijera contra la computadora
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+# Estrutura del proyecto
 
-## Getting Started
+```bash
+├── 1
+├── Dockerfile
+├── README.md
+├── app
+│   ├── app.css
+│   ├── components
+│   │   ├── Counters
+│   │   │   └── Counters.tsx
+│   │   ├── Header
+│   │   │   └── Header.tsx
+│   │   ├── Item
+│   │   │   └── Item.tsx
+│   │   ├── Persona
+│   │   │   └── Persona.tsx
+│   │   ├── Pregunta
+│   │   │   └── Pregunta.tsx
+│   │   ├── Resultado
+│   │   │   └── Resultado.tsx
+│   │   └── Saludo
+│   │       └── Saludo.tsx
+│   ├── root.tsx
+│   ├── routes
+│   │   ├── Imc
+│   │   │   └── Imc.tsx
+│   │   ├── Inicio
+│   │   │   └── Inicio.tsx
+│   │   └── Ppt
+│   │       └── Ppt.tsx
+│   └── routes.ts
+├── package-lock.json
+├── package.json
+├── public
+│   └── favicon.ico
+├── react-router.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
 
-### Installation
+# Instalación
 
-Install the dependencies:
+Instalar dependencias:
 
 ```bash
 npm install
 ```
 
-### Development
+# Desarollo
 
-Start the development server with HMR:
+Empiece a desarrollar
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+Podra ver su aplicacion aqui:  `http://localhost:5173`.
