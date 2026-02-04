@@ -135,7 +135,6 @@ aside nav button.active {
   margin-bottom: 0.5rem;
 }
 
-/* Resultado IMC */
 .resultado-imc {
   margin-top: 1.5rem;
   padding: 1.5rem;
@@ -162,6 +161,8 @@ aside nav button.active {
 .categoria-imc {
   font-size: 0.875rem;
   color: #495057;
+}
+
 .ppt {
   display: flex;
   flex-direction: column;
@@ -292,6 +293,7 @@ aside nav button.active {
   transform: scale(1.05);
 }
 
+/* Estilos para el acordeón de preguntas */
 .preguntas-container {
   width: 80%;
   max-width: 1200px;
@@ -370,5 +372,4 @@ aside nav button.active {
   line-height: 1.8;
   color: #495057;
   font-size: 1rem;
-}
 }
