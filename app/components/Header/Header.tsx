@@ -4,7 +4,7 @@ function Header() {
   let menu = [
     { nombre: "Inicio", ruta: "/inicio" },
     { nombre: "IMC", ruta: "/imc" },
-    { nombre: "Tercer Menu", ruta: "/tercer-menu" },
+    { nombre: "PPT", ruta: "/ppt" },
   ];
   return (
     <header>
