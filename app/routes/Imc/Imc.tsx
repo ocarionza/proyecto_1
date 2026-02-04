@@ -3,17 +3,18 @@ import Saludo from "~/components/Saludo/Saludo";
 
 function SegundoMenu() {
   const [nombre, setNombre] = useState("");
-  const [saludo, setSaludo] = useState("");
+  const [altura, setAltura] = useState("");
+  const [peso, setPeso] = useState("");
   const [esNombreValido, setEsNombreValido] = useState(false);
   const [enviado, setEnviado] = useState(false);
 
-  function capturarNombre(event: React.FormEvent<HTMLFormElement>) {
+  function capturarFormulario(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (esNombreValido) {
-      setSaludo(nombre);
+      setResultado(nombre);
       setEnviado(true);
     } else {
-      setSaludo("");
+      setResultado("");
       setEnviado(false);
     }
   }
@@ -32,8 +33,9 @@ function SegundoMenu() {
   return (
     <div>
       <h1>Segundo menu</h1>
-      <form onSubmit={capturarNombre}>
+      <form onSubmit={capturarFormulario}>
         <label htmlFor="nombre">Nombre:</label>
+        <br />
         <input
           type="text"
           placeholder="Nombre"
@@ -50,6 +52,33 @@ function SegundoMenu() {
             El nombre debe tener al menos 4 caracteres.
           </span>
         )}
+        <br />
+        <label htmlFor="altura">Altura:</label>
+        <br />
+        <input
+          type="text"
+          placeholder="Altura"
+          name="altura"
+          id="altura"
+          value={altura}
+          onChange={(e) => setAltura(e.target.value)}
+        />
+        <br />
+        <label htmlFor="peso">Peso:</label>
+        <br />
+        <input
+          type="text"
+          placeholder="Peso"
+          name="peso"
+          id="peso"
+          value={peso}
+          onChange={(e) => setPeso(e.target.value)}
+          style={{
+            border: !esNombreValido ? "2px solid red" : "2px solid green",
+          }}
+        />
+        <br />
+        
         <button type="submit">Enviar</button>
       </form>
       {enviado && <Saludo mensaje={saludo} />}
