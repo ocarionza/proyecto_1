@@ -134,3 +134,32 @@ aside nav button.active {
 .person-description p br {
   margin-bottom: 0.5rem;
 }
+
+/* Resultado IMC */
+.resultado-imc {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.resultado-imc h2 {
+  font-size: 1.25rem;
+  color: #212529;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.saludo-imc {
+  font-size: 0.875rem;
+  color: #495057;
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+.categoria-imc {
+  font-size: 0.875rem;
+  color: #495057;
+}
