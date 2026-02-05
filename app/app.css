@@ -373,3 +373,96 @@ aside nav button.active {
   color: #495057;
   font-size: 1rem;
 }
+
+.imc-container {
+  min-height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  margin-left: 0;
+}
+
+.imc-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+}
+
+.imc-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.imc-subtitulo {
+  font-size: 0.875rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.imc-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imc-campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.imc-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.imc-input {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.imc-input.valido {
+  border-color: #27ae60;
+}
+
+.imc-input.invalido {
+  border-color: #e74c3c;
+}
+
+.imc-error {
+  font-size: 0.8rem;
+  color: #e74c3c;
+}
+
+.imc-boton {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.imc-boton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

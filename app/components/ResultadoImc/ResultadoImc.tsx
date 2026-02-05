@@ -28,7 +28,8 @@ export default function ResultadoImc({ nombre, imc }: ResultadoImcProps) {
         </span>
       </p>
       <p className="categoria-imc">
-        Categoria: <span style={{ color: categoria.color }}>{categoria.texto}</span>
+        Categoria:{" "}
+        <span style={{ color: categoria.color }}>{categoria.texto}</span>
       </p>
     </div>
   );
