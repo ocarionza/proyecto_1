@@ -1,6 +1,6 @@
 # Presentado por:
 
-- Pirry
+- Daniel Felipe Espitia Munoz
 - Jose Brayan Ocampo Castaño
 
 # Funcionalidades
@@ -12,7 +12,7 @@
 # Estrutura del proyecto
 
 ```bash
-├── 1
+.
 ├── Dockerfile
 ├── README.md
 ├── app
@@ -30,6 +30,8 @@
 │   │   │   └── Pregunta.tsx
 │   │   ├── Resultado
 │   │   │   └── Resultado.tsx
+│   │   ├── ResultadoImc
+│   │   │   └── ResultadoImc.tsx
 │   │   └── Saludo
 │   │       └── Saludo.tsx
 │   ├── root.tsx
